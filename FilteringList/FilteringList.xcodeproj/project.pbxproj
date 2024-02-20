@@ -13,7 +13,7 @@
 		B5B210ED2B84E33E00D2F984 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5B210EC2B84E33E00D2F984 /* Preview Assets.xcassets */; };
 		B5B210F42B84E36E00D2F984 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B210F32B84E36E00D2F984 /* User.swift */; };
 		B5B210F62B84E38000D2F984 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B210F52B84E38000D2F984 /* Bundle-Decodable.swift */; };
-		B5B210F82B84E39100D2F984 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = B5B210F72B84E39100D2F984 /* users.json */; };
+		B5B211142B850A9900D2F984 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = B5B211132B850A9900D2F984 /* users.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +24,7 @@
 		B5B210EC2B84E33E00D2F984 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B5B210F32B84E36E00D2F984 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B5B210F52B84E38000D2F984 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
-		B5B210F72B84E39100D2F984 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = users.json; path = ../../FilteringListExample/FilteringListExample/users.json; sourceTree = "<group>"; };
+		B5B211132B850A9900D2F984 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +61,7 @@
 				B5B210E72B84E33C00D2F984 /* ContentView.swift */,
 				B5B210F32B84E36E00D2F984 /* User.swift */,
 				B5B210F52B84E38000D2F984 /* Bundle-Decodable.swift */,
-				B5B210F72B84E39100D2F984 /* users.json */,
+				B5B211132B850A9900D2F984 /* users.json */,
 				B5B210E92B84E33E00D2F984 /* Assets.xcassets */,
 				B5B210EB2B84E33E00D2F984 /* Preview Content */,
 			);
@@ -134,7 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5B210F82B84E39100D2F984 /* users.json in Resources */,
+				B5B211142B850A9900D2F984 /* users.json in Resources */,
 				B5B210ED2B84E33E00D2F984 /* Preview Assets.xcassets in Resources */,
 				B5B210EA2B84E33E00D2F984 /* Assets.xcassets in Resources */,
 			);
