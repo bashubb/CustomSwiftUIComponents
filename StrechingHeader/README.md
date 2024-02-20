@@ -99,3 +99,8 @@ struct ContentView: View {
 ```
 
 Replace `"header_image"` with the name of your header image.
+
+Preview
+---------
+
+<img src="https://github.com/bashubb/CustomSwiftUIComponents/blob/main/StretchingHeader.gif">
