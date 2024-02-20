@@ -7,27 +7,21 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    let users: [User] = Bundle.main.decode("users.json")
-    
-    @State private var filteredItems = [User]()
+struct FilteringList<T: Identifiable, Content: View>: View {
+    @State private var filteredItems = [T]()
     @State private var filterString = ""
     
+    let listItems: [T]
+    let filterKeyPaths: [KeyPath<T, String>]
+    let content: (T) -> Content
+    
     var body: some View {
-        NavigationStack {
-            VStack {
-                TextField("Type to filter", text: $filterString)
-                    .textFieldStyle(.roundedBorder)
-                    .padding(.horizontal)
-               
-                List(filteredItems) {user in
-                    VStack(alignment: .leading) {
-                        Text(user.name)
-                            .font(.headline)
-                        Text(user.address)
-                            .foregroundStyle(.secondary)
-                    }
-                }
+        VStack {
+            TextField("Type to filter", text: $filterString)
+                .textFieldStyle(.roundedBorder)
+                .padding(.horizontal)
+            
+            List(filteredItems, rowContent: content)
                 .listStyle(.plain)
                 .onAppear(perform: applyFilter)
                 .onChange(of: filterString) { _ in
@@ -35,19 +29,49 @@ struct ContentView: View {
                         applyFilter()
                     }
                 }
-            }
-            .navigationTitle("Adress Book")
         }
+    }
+    
+    init(_ data: [T], filterKeys: KeyPath<T, String>..., @ViewBuilder rowContent: @escaping (T) -> Content) {
+        listItems =  data
+        filterKeyPaths = filterKeys
+        content = rowContent
     }
     
     func applyFilter() {
         let cleanedFilter = filterString.trimmingCharacters(in: .whitespacesAndNewlines)
         if cleanedFilter.isEmpty {
-            filteredItems = users
+            filteredItems = listItems
         } else {
-            filteredItems = users.filter { $0.name.localizedCaseInsensitiveContains(cleanedFilter)}
+            filteredItems = listItems.filter { element in
+                filterKeyPaths.contains {
+                    element[keyPath: $0]
+                        .localizedCaseInsensitiveContains(cleanedFilter)
+                }
+            }
         }
     }
+}
+
+struct ContentView: View {
+    let users: [User] = Bundle.main.decode("users.json")
+    
+    var body: some View {
+        NavigationStack {
+            FilteringList(users, filterKeys: \.name, \.address) { user in
+                VStack(alignment: .leading) {
+                    Text(user.name)
+                        .font(.headline)
+                    Text(user.address)
+                        .foregroundStyle(.secondary)
+                }
+            }
+            .navigationTitle("Adress Book")
+            
+        }
+    }
+    
+    
 }
 
 
