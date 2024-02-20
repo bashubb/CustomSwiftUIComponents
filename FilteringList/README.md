@@ -10,7 +10,7 @@ Usage
 
 2.  Use the `FilteringList` view in your SwiftUI views by providing the list of items to filter, the key paths to filter on, and the content view to display for each item, like this:
 
-swiftCopy code
+
 
 ```swift 
 import SwiftUI
@@ -35,7 +35,7 @@ Example
 
 Here's an example of how you can use `FilteringList` in your SwiftUI views:
 
-swiftCopy code
+
 
 ```swift
 import SwiftUI
