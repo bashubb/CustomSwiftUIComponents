@@ -63,5 +63,5 @@ Replace `"users.json"` with the name of your JSON file containing the list of it
 Preview
 -------
 
-<img src="https://github.com/bashubb/CustomSwiftUIComponents/blob/main/FilteringList.gif">
+<img src="https://github.com/bashubb/CustomSwiftUIComponents/blob/main/FilteringList/FilteringList.gif">
     
