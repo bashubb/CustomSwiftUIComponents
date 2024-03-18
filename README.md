@@ -11,8 +11,8 @@ Here's a list of custom components included in this repository:
 
 | Component | Description | Screenshot |
 | --- | --- | --- |
-| [Filtering List](https://github.com/bashubb/CustomSwiftUIComponents/tree/main/FilteringList) | The FilteringList SwiftUI component offers an efficient method to filter a list of items based on specified key paths, simplifying content organization and navigation within SwiftUI applications. | <img src="https://github.com/bashubb/CustomSwiftUIComponents/blob/main/FilteringList1.jpeg" width="20%" >|
-| [Stretching Header](https://github.com/bashubb/CustomSwiftUIComponents/tree/main/StrechingHeader) | The StretchingHeader SwiftUI component enables the creation of a dynamic stretching header effect, commonly used in scrollable views such as lists or scroll views, offering enhanced visual appeal and user engagement within SwiftUI applications. | <img src="https://github.com/bashubb/CustomSwiftUIComponents/blob/main/StretchingHeader.gif" width="20%" > |
+| [Filtering List](https://github.com/bashubb/CustomSwiftUIComponents/tree/main/FilteringList) | The FilteringList SwiftUI component offers an efficient method to filter a list of items based on specified key paths, simplifying content organization and navigation within SwiftUI applications. | <img src="https://github.com/bashubb/CustomSwiftUIComponents/blob/main/FilteringList/FilteringList1.jpeg" width="20%" >|
+| [Stretching Header](https://github.com/bashubb/CustomSwiftUIComponents/tree/main/StrechingHeader) | The StretchingHeader SwiftUI component enables the creation of a dynamic stretching header effect, commonly used in scrollable views such as lists or scroll views, offering enhanced visual appeal and user engagement within SwiftUI applications. | <img src="https://github.com/bashubb/CustomSwiftUIComponents/blob/main/StrechingHeader/StretchingHeader.gif" width="20%" > |
 
 
 Installation
